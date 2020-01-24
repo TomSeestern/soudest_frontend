@@ -1,0 +1,19 @@
+.App-logo {
+    height: 7vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.ProfileIcon{
+    margin-left:auto;
+    margin-right:0;
+}
+
+.AppBarItems{
+    flex-grow: 0.05;
+}

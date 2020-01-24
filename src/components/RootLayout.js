@@ -5,6 +5,7 @@ import Grid from '@material-ui/core/Grid';
 
 import SimpleMap from './simplemap';
 import InputCard from './InputCard';
+import AppBar from './AppBar';
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -24,7 +25,7 @@ export default function FullWidthGrid() {
         <div className={classes.root}>
             <Grid container spacing={3}>
                 <Grid item xs={12}>
-                    <Paper className={classes.paper}>xs=12</Paper>
+                    <AppBar/>
                 </Grid>
                 <Grid item xs={12} sm={6}>
                     <InputCard/>

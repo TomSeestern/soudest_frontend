@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="0eb541c0-60c8-46e7-aebb-2916ca4cd11a" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/src/components/AppBar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/InputCard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/AppBar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/SouDestLogo.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/RootLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RootLayout.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,6 +19,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -28,6 +31,8 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/img" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -35,6 +40,9 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Tom\WebstormProjects\soudest_frontend\src\img" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Tom\WebstormProjects\soudest_frontend\src\img" />
       <recent name="C:\Users\Tom\WebstormProjects\soudest_frontend\public" />
@@ -103,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579862084284</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add Input Card">
+      <created>1579862597138</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1579862597138</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,6 +151,7 @@
     <MESSAGE value="Add GoogleMap and Cleanup file structure" />
     <MESSAGE value="Revert &quot;Add Material Design Mini Drawer&quot;&#10;&#10;This reverts commit 164404d5" />
     <MESSAGE value="Add Grid Layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Grid Layout" />
+    <MESSAGE value="Add Input Card" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Input Card" />
   </component>
 </project>
