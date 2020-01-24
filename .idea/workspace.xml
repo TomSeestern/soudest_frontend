@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0eb541c0-60c8-46e7-aebb-2916ca4cd11a" name="Default Changelist" comment="">
+    <list default="true" id="0eb541c0-60c8-46e7-aebb-2916ca4cd11a" name="Default Changelist" comment="Add Material Design Mini Drawer">
+      <change afterPath="$PROJECT_DIR$/src/components/RootLayout.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -87,18 +89,37 @@
       <option name="project" value="LOCAL" />
       <updated>1579699496441</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Revert &quot;Add Material Design Mini Drawer&quot;&#10;&#10;This reverts commit 164404d5">
+      <created>1579860586299</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1579860586299</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -106,6 +127,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add GoogleMap and Cleanup file structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add GoogleMap and Cleanup file structure" />
+    <MESSAGE value="Revert &quot;Add Material Design Mini Drawer&quot;&#10;&#10;This reverts commit 164404d5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;Add Material Design Mini Drawer&quot;&#10;&#10;This reverts commit 164404d5" />
   </component>
 </project>
