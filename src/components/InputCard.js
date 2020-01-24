@@ -10,6 +10,7 @@ import NavigationIcon from '@material-ui/icons/Navigation';
 
 import TransportSelector from './TransportSelector';
 import DatesSelector from "./DatesSelector";
+import TravelersSelector from "./TravelersSelector";
 
 const useStyles = makeStyles({
     card: {
@@ -37,6 +38,7 @@ export default function SimpleCard() {
             <CardContent>
                 <TransportSelector/>
                 <DatesSelector/>
+                <TravelersSelector/>
             </CardContent>
             <CardActions>
                 <Fab variant="extended">

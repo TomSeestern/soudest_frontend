@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0eb541c0-60c8-46e7-aebb-2916ca4cd11a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/DatesSelector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/TravelersSelector.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/InputCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/InputCard.js" afterDir="false" />
     </list>
@@ -129,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579867253851</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add Date Selectors">
+      <created>1579868729741</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1579868729741</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,6 +172,7 @@
     <MESSAGE value="Add Input Card" />
     <MESSAGE value="Add AppBar" />
     <MESSAGE value="Add Transport Selector" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Transport Selector" />
+    <MESSAGE value="Add Date Selectors" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Date Selectors" />
   </component>
 </project>
