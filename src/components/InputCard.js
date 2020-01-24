@@ -6,6 +6,8 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
+import TransportSelector from './TransportSelector';
+
 const useStyles = makeStyles({
     card: {
         minWidth: 275,
@@ -30,6 +32,7 @@ export default function SimpleCard() {
     return (
         <Card className={classes.card}>
             <CardContent>
+                <TransportSelector/>
                 <Typography className={classes.title} color="textSecondary" gutterBottom>
                     Word of the Day
                 </Typography>
