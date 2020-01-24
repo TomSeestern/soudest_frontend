@@ -3,10 +3,13 @@ import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
+
+import Fab from '@material-ui/core/Fab';
+import NavigationIcon from '@material-ui/icons/Navigation';
+
 
 import TransportSelector from './TransportSelector';
+import DatesSelector from "./DatesSelector";
 
 const useStyles = makeStyles({
     card: {
@@ -33,23 +36,13 @@ export default function SimpleCard() {
         <Card className={classes.card}>
             <CardContent>
                 <TransportSelector/>
-                <Typography className={classes.title} color="textSecondary" gutterBottom>
-                    Word of the Day
-                </Typography>
-                <Typography variant="h5" component="h2">
-                    be{bull}nev{bull}o{bull}lent
-                </Typography>
-                <Typography className={classes.pos} color="textSecondary">
-                    adjective
-                </Typography>
-                <Typography variant="body2" component="p">
-                    well meaning and kindly.
-                    <br />
-                    {'Lorem ipsum dolor amet lyft celiac next level subway tile ugh flannel. Copper mug fashion axe roof party, sustainable small batch chicharrones echo park art party live-edge venmo aesthetic trust fund. Butcher umami vice tofu. Crucifix affogato air plant etsy fixie echo park twee squid wolf cornhole +1 meggings. Etsy mixtape godard XOXO vegan man braid cliche helvetica shaman heirloom. Master cleanse butcher banjo polaroid whatever.'}
-                </Typography>
+                <DatesSelector/>
             </CardContent>
             <CardActions>
-                <Button size="small">Learn More</Button>
+                <Fab variant="extended">
+                    <NavigationIcon className={classes.extendedIcon} />
+                    Navigate
+                </Fab>
             </CardActions>
         </Card>
     );
