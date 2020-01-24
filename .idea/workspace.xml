@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0eb541c0-60c8-46e7-aebb-2916ca4cd11a" name="Default Changelist" comment="">
+    <list default="true" id="0eb541c0-60c8-46e7-aebb-2916ca4cd11a" name="Default Changelist" comment="Add Icons to TravelerSelector Button">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TravelersSelector.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TravelersSelector.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TransportSelector.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TransportSelector.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -143,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579871940257</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Add Icons to TravelerSelector Button">
+      <created>1579874408485</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1579874408485</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,6 +188,7 @@
     <MESSAGE value="Add Transport Selector" />
     <MESSAGE value="Add Date Selectors" />
     <MESSAGE value="Add Traveler Selector" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Traveler Selector" />
+    <MESSAGE value="Add Icons to TravelerSelector Button" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Icons to TravelerSelector Button" />
   </component>
 </project>
