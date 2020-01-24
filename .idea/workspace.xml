@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0eb541c0-60c8-46e7-aebb-2916ca4cd11a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Drawer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -81,7 +78,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1579694110797</updated>
-      <workItem from="1579694112879" duration="6876000" />
+      <workItem from="1579694112879" duration="3742000" />
     </task>
     <task id="LOCAL-00001" summary="Add GoogleMap and Cleanup file structure">
       <created>1579699496440</created>
@@ -90,14 +87,7 @@
       <option name="project" value="LOCAL" />
       <updated>1579699496441</updated>
     </task>
-    <task id="LOCAL-00002" summary="Fix Location of React Logo">
-      <created>1579699928659</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1579699928659</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,7 +106,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add GoogleMap and Cleanup file structure" />
-    <MESSAGE value="Fix Location of React Logo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix Location of React Logo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add GoogleMap and Cleanup file structure" />
   </component>
 </project>
