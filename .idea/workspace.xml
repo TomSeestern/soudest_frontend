@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0eb541c0-60c8-46e7-aebb-2916ca4cd11a" name="Default Changelist" comment="Add Icons to TravelerSelector Button">
+    <list default="true" id="0eb541c0-60c8-46e7-aebb-2916ca4cd11a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/LoginModal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SignIn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SignUp.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TransportSelector.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TransportSelector.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,11 +46,11 @@
       <recent name="C:\Users\Tom\WebstormProjects\soudest_frontend\src\img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Tom\WebstormProjects\soudest_frontend\src\components" />
+      <recent name="C:\Users\Tom\WebstormProjects\soudest_frontend\src" />
       <recent name="C:\Users\Tom\WebstormProjects\soudest_frontend\src\img" />
       <recent name="C:\Users\Tom\WebstormProjects\soudest_frontend\public" />
       <recent name="C:\Users\Tom\WebstormProjects\soudest_frontend\src\css" />
-      <recent name="C:\Users\Tom\WebstormProjects\soudest_frontend\src\tests" />
-      <recent name="C:\Users\Tom\WebstormProjects\soudest_frontend\src\components" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -86,6 +91,8 @@
       <option name="presentableId" value="Default" />
       <updated>1579694110797</updated>
       <workItem from="1579694112879" duration="3742000" />
+      <workItem from="1580557445165" duration="459000" />
+      <workItem from="1581184995439" duration="786000" />
     </task>
     <task id="LOCAL-00001" summary="Add GoogleMap and Cleanup file structure">
       <created>1579699496440</created>
@@ -150,7 +157,21 @@
       <option name="project" value="LOCAL" />
       <updated>1579874408485</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Made TransportSelect Buttons togglable!">
+      <created>1579884662589</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1579884662589</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Add WebStorm data to Gitignore">
+      <created>1579885754953</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1579885754953</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,6 +210,8 @@
     <MESSAGE value="Add Date Selectors" />
     <MESSAGE value="Add Traveler Selector" />
     <MESSAGE value="Add Icons to TravelerSelector Button" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Icons to TravelerSelector Button" />
+    <MESSAGE value="Made TransportSelect Buttons togglable!" />
+    <MESSAGE value="Add WebStorm data to Gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add WebStorm data to Gitignore" />
   </component>
 </project>
