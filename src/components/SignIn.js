@@ -61,7 +61,7 @@ export default function SignIn() {
                     Sign in
                 </Typography>
                 //TODO Refactor action for Form
-                <form className={classes.form} noValidate action="localhost:3000/users/login" method="post">
+                <form className={classes.form} noValidate action="http://localhost:3000/users/login" method="post">
                     <TextField
                         variant="outlined"
                         margin="normal"

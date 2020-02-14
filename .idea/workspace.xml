@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0eb541c0-60c8-46e7-aebb-2916ca4cd11a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/LoginModal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SignIn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SignUp.js" afterDir="false" />
+    <list default="true" id="0eb541c0-60c8-46e7-aebb-2916ca4cd11a" name="Default Changelist" comment="Add SignIn/Up FrontendDummy and HashRouter">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SignIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SignIn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SignUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SignUp.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +28,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../soudest_backend" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -92,7 +88,10 @@
       <updated>1579694110797</updated>
       <workItem from="1579694112879" duration="3742000" />
       <workItem from="1580557445165" duration="459000" />
-      <workItem from="1581184995439" duration="786000" />
+      <workItem from="1581184995439" duration="1892000" />
+      <workItem from="1581187992803" duration="1281000" />
+      <workItem from="1581258315786" duration="708000" />
+      <workItem from="1581707053100" duration="2241000" />
     </task>
     <task id="LOCAL-00001" summary="Add GoogleMap and Cleanup file structure">
       <created>1579699496440</created>
@@ -171,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579885754953</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Add SignIn/Up FrontendDummy and HashRouter">
+      <created>1581186272483</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1581186272483</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,6 +218,7 @@
     <MESSAGE value="Add Icons to TravelerSelector Button" />
     <MESSAGE value="Made TransportSelect Buttons togglable!" />
     <MESSAGE value="Add WebStorm data to Gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add WebStorm data to Gitignore" />
+    <MESSAGE value="Add SignIn/Up FrontendDummy and HashRouter" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add SignIn/Up FrontendDummy and HashRouter" />
   </component>
 </project>
