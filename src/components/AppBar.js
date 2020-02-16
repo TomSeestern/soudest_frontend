@@ -45,7 +45,7 @@ export default function MenuAppBar() {
     const handleClose = (event) => {
         setAnchorEl(null);
         if (event.target.id === 'logout'){
-            history.push("/logout");
+            history.push({pathname: "/SignIn",state: {logout:true}});
         }
 
     };
