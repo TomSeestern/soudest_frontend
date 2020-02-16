@@ -13,6 +13,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 import logo from "../img/SouDestLogo.svg";
 import '../css/AppBar.css';
+import { useHistory } from "react-router-dom";
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -31,6 +32,7 @@ export default function MenuAppBar() {
     const [auth, setAuth] = React.useState(true);
     const [anchorEl, setAnchorEl] = React.useState(null);
     const open = Boolean(anchorEl);
+    const history = useHistory();
 
     const handleChange = event => {
         setAuth(event.target.checked);
@@ -40,8 +42,12 @@ export default function MenuAppBar() {
         setAnchorEl(event.currentTarget);
     };
 
-    const handleClose = () => {
+    const handleClose = (event) => {
         setAnchorEl(null);
+        if (event.target.id === 'logout'){
+            history.push("/logout");
+        }
+
     };
 
     /*
@@ -102,6 +108,7 @@ export default function MenuAppBar() {
                             >
                                 <MenuItem onClick={handleClose}>Profile</MenuItem>
                                 <MenuItem onClick={handleClose}>My account</MenuItem>
+                                <MenuItem id="logout" onClick={handleClose}>Logout</MenuItem>
                             </Menu>
                         </div>
                     )}

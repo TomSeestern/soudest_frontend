@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0eb541c0-60c8-46e7-aebb-2916ca4cd11a" name="Default Changelist" comment="Add SignIn/Up FrontendDummy and HashRouter">
+    <list default="true" id="0eb541c0-60c8-46e7-aebb-2916ca4cd11a" name="Default Changelist" comment="Make SignIn and SignUp work with NodeJS Backend">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SignIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SignIn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SignUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SignUp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AppBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppBar.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +90,7 @@
       <workItem from="1581184995439" duration="1892000" />
       <workItem from="1581187992803" duration="1281000" />
       <workItem from="1581258315786" duration="708000" />
-      <workItem from="1581707053100" duration="2241000" />
+      <workItem from="1581707053100" duration="4628000" />
     </task>
     <task id="LOCAL-00001" summary="Add GoogleMap and Cleanup file structure">
       <created>1579699496440</created>
@@ -177,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581186272483</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Make SignIn and SignUp work with NodeJS Backend">
+      <created>1581714068540</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1581714068540</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,6 +225,7 @@
     <MESSAGE value="Made TransportSelect Buttons togglable!" />
     <MESSAGE value="Add WebStorm data to Gitignore" />
     <MESSAGE value="Add SignIn/Up FrontendDummy and HashRouter" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add SignIn/Up FrontendDummy and HashRouter" />
+    <MESSAGE value="Make SignIn and SignUp work with NodeJS Backend" />
+    <option name="LAST_COMMIT_MESSAGE" value="Make SignIn and SignUp work with NodeJS Backend" />
   </component>
 </project>
