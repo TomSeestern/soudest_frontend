@@ -7,6 +7,10 @@ import CardContent from '@material-ui/core/CardContent';
 import Fab from '@material-ui/core/Fab';
 import NavigationIcon from '@material-ui/icons/Navigation';
 
+// observer einbinden
+//import { observer } from "mobx-react";
+// der Store auf den gehört werden soll, muss eingebunden werden
+//import routeStore from "../stores/routeStore"
 
 import TransportSelector from './TransportSelector';
 import DatesSelector from "./DatesSelector";
@@ -32,16 +36,25 @@ const useStyles = makeStyles({
 export default function SimpleCard() {
     const classes = useStyles();
     const bull = <span className={classes.bullet}>•</span>;
+    const TransportSelectorRef = React.createRef();
+    const DatesSelectorRef = React.createRef();
+    const TravelersSelectorRef = React.createRef();
+
+    function handleSubmit(){
+        let transState = TransportSelectorRef.current.state;
+
+        console.log("INFO: "+"Taxi-State: "+transState);
+    }
 
     return (
         <Card className={classes.card}>
             <CardContent>
-                <TransportSelector/>
-                <DatesSelector/>
-                <TravelersSelector/>
+                <TransportSelector ref={TransportSelectorRef}/>
+                <DatesSelector ref={DatesSelectorRef}/>
+                <TravelersSelector ref={TravelersSelectorRef}/>
             </CardContent>
             <CardActions>
-                <Fab variant="extended">
+                <Fab variant="extended" onClick={()=>handleSubmit()} >
                     <NavigationIcon className={classes.extendedIcon} />
                     Navigate
                 </Fab>
