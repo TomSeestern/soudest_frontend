@@ -14,6 +14,7 @@ import Menu from '@material-ui/core/Menu';
 import logo from "../img/SouDestLogo.svg";
 import '../css/AppBar.css';
 import {useHistory} from "react-router-dom";
+import Cookies from 'js-cookie';
 
 import Button from '@material-ui/core/Button';
 import ButtonGroup from "@material-ui/core/ButtonGroup";
@@ -32,7 +33,7 @@ const useStyles = makeStyles(theme => ({
 
 export default function MenuAppBar() {
     const classes = useStyles();
-    const [auth, setAuth] = React.useState(true);
+    const [auth, setAuth] = React.useState(false);
     const [anchorEl, setAnchorEl] = React.useState(null);
     const open = Boolean(anchorEl);
     const history = useHistory();
@@ -61,6 +62,32 @@ export default function MenuAppBar() {
         }
     };
 
+    const checkLoginStatus = (event) => {
+        let token = Cookies.get('jwt');
+        console.log("INFO: "+"token"+token);
+        if (typeof token !== 'undefined'){
+            var base64Url = token.split(".")[1];
+            var base64 = base64Url.replace(/-/g, "+").replace(/_/g, "/");
+            var jsonPayload = decodeURIComponent(
+                atob(base64)
+                    .split("")
+                    .map(function(c) {
+                        return "%" + ("00" + c.charCodeAt(0).toString(16)).slice(-2);
+                    })
+                    .join("")
+            );
+            console.log("INFO: "+"got Jwt: "+jsonPayload);
+            if (!auth){setAuth(true);}
+            return true;
+
+        }else{
+            console.log("INFO: "+"No JWT found");
+            if (auth){setAuth(false);}
+            return false;
+        }
+
+    };
+    checkLoginStatus();
     /*
     <FormGroup>
         <FormControlLabel
@@ -122,6 +149,11 @@ export default function MenuAppBar() {
                                 <MenuItem id="logout" onClick={handleClose}>Logout</MenuItem>
                             </Menu>
                         </div>
+                    )}
+                    {!auth && (
+                        <Button href="#/SignIn/"  id="login" variant="text" className="AppBarItems">
+                            Login
+                        </Button>
                     )}
                 </Toolbar>
             </AppBar>

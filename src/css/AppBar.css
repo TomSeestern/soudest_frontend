@@ -18,3 +18,8 @@
     flex-grow: 0.05;
     color: white !important;
 }
+
+#login{
+    margin-left:auto;
+    margin-right:0;
+}
