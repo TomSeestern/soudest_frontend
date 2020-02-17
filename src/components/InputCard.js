@@ -42,38 +42,42 @@ export default function SimpleCard() {
 
 
     function handleSubmit(){
+        let req = {};
         let transState = TransportSelectorRef.current.state;
-        let taxi = transState.taxi;
-        let bus = transState.bus;
-        let train = transState.train;
-        let tram = transState.tram;
-        let subway = transState.subway;
-        let flight = transState.flight;
-        let boat = transState.boat;
+        req.taxi = transState.taxi;
+        req.bus = transState.bus;
+        req.train = transState.train;
+        req.tram = transState.tram;
+        req.subway = transState.subway;
+        req.flight = transState.flight;
+        req.boat = transState.boat;
 
         let DateSel = DatesSelectorRef.current.state;
-        let src = DateSel.source;
-        let trgt = DateSel.target;
-        let time = DateSel.time;
-        let date = DateSel.date;
+        req.src = DateSel.source;
+        req.trgt = DateSel.target;
+        req.time = DateSel.time;
+        req.date = DateSel.date;
 
         //let TravSel = TravelersSelectorRef.current.state;
-        let travelerId = 1;
+        req.travelerId = 1;
 
         console.log("INFO: "
-            +" Taxi: "+taxi
-            +" bus: "+bus
-            +" train: "+train
-            +" tram: "+tram
-            +" subway: "+subway
-            +" flight: "+flight
-            +" boat: "+boat
-            +" src: "+src
-            +" trgt: "+trgt
-            +" time: "+time
-            +" date: "+date
-            +" travelerId: "+travelerId
+            +" Taxi: "+req.taxi
+            +" bus: "+req.bus
+            +" train: "+req.train
+            +" tram: "+req.tram
+            +" subway: "+req.subway
+            +" flight: "+req.flight
+            +" boat: "+req.boat
+            +" src: "+req.src
+            +" trgt: "+req.trgt
+            +" time: "+req.time
+            +" date: "+req.date
+            +" travelerId: "+req.travelerId
         );
+
+        //Now lets ask the Server what he thinks of our Parameters
+        routeStore.fetchRoute(req)
     }
 
     return (
