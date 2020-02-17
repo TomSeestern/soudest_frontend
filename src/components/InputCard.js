@@ -8,9 +8,9 @@ import Fab from '@material-ui/core/Fab';
 import NavigationIcon from '@material-ui/icons/Navigation';
 
 // observer einbinden
-//import { observer } from "mobx-react";
+import { observer } from "mobx-react";
 // der Store auf den gehört werden soll, muss eingebunden werden
-//import routeStore from "../stores/routeStore"
+import routeStore from "../stores/routeStore"
 
 import TransportSelector from './TransportSelector';
 import DatesSelector from "./DatesSelector";
@@ -42,6 +42,13 @@ export default function SimpleCard() {
 
     function handleSubmit(){
         let transState = TransportSelectorRef.current.state;
+        let taxi = transState.taxi;
+        let bus = transState.bus;
+        let train = transState.train;
+        let tram = transState.tram;
+        let subway = transState.subway;
+        let flight = transState.flight;
+        let boat = transState.boat;
 
         console.log("INFO: "+"Taxi-State: "+transState);
     }

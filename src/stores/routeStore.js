@@ -1,5 +1,4 @@
 import { observable, action } from 'mobx';
-import config from "../../config/main.config";
 
 class RouteStore {
     @observable selectedRoute = {};

@@ -1,12 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0eb541c0-60c8-46e7-aebb-2916ca4cd11a" name="Default Changelist" comment="Bugfix: Remove Cookie when Logout">
-      <change afterPath="$PROJECT_DIR$/src/stores/routeStore.js" afterDir="false" />
+    <list default="true" id="0eb541c0-60c8-46e7-aebb-2916ca4cd11a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/config/env.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/jest/cssTransform.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/jest/fileTransform.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/modules.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/paths.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/pnpTs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/webpack.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/webpackDevServer.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/build.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/start.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/InputCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/InputCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stores/routeStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/routeStore.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +41,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Google Drive/FH WEINGARTEN/WebApp/my Seeds/6_mobx" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -40,15 +51,16 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Tom\WebstormProjects\soudest_frontend\src\img" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Tom\WebstormProjects\soudest_frontend\src\components" />
       <recent name="C:\Users\Tom\WebstormProjects\soudest_frontend\src" />
       <recent name="C:\Users\Tom\WebstormProjects\soudest_frontend\src\img" />
       <recent name="C:\Users\Tom\WebstormProjects\soudest_frontend\public" />
       <recent name="C:\Users\Tom\WebstormProjects\soudest_frontend\src\css" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Tom\WebstormProjects\soudest_frontend" />
+      <recent name="C:\Users\Tom\WebstormProjects\soudest_frontend\src\img" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -93,7 +105,7 @@
       <workItem from="1581184995439" duration="1892000" />
       <workItem from="1581187992803" duration="1281000" />
       <workItem from="1581258315786" duration="708000" />
-      <workItem from="1581707053100" duration="30236000" />
+      <workItem from="1581707053100" duration="31463000" />
     </task>
     <task id="LOCAL-00001" summary="Add GoogleMap and Cleanup file structure">
       <created>1579699496440</created>
@@ -242,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581946885212</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Add RouteStore MobX Store">
+      <created>1581956104336</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1581956104336</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,6 +311,7 @@
     <MESSAGE value="Make AppBar Text to Button and add Links to Sites" />
     <MESSAGE value="Make AppBar Buttons dependent on Login State" />
     <MESSAGE value="Bugfix: Remove Cookie when Logout" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bugfix: Remove Cookie when Logout" />
+    <MESSAGE value="Add RouteStore MobX Store" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add RouteStore MobX Store" />
   </component>
 </project>
