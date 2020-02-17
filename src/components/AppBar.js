@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import {makeStyles} from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
@@ -13,7 +13,10 @@ import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 import logo from "../img/SouDestLogo.svg";
 import '../css/AppBar.css';
-import { useHistory } from "react-router-dom";
+import {useHistory} from "react-router-dom";
+
+import Button from '@material-ui/core/Button';
+import ButtonGroup from "@material-ui/core/ButtonGroup";
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -24,7 +27,7 @@ const useStyles = makeStyles(theme => ({
     },
     title: {
         flexGrow: 1,
-    },
+    }
 }));
 
 export default function MenuAppBar() {
@@ -41,13 +44,21 @@ export default function MenuAppBar() {
     const handleMenu = event => {
         setAnchorEl(event.currentTarget);
     };
+    const handleAppBarButton = event => {
+        if (event.target.className === "test") {
+            history.push({pathname: "/", state: {logout: true}});
+        } else if (event.target.id === 'profile') {
+            history.push({pathname: "/Profile", state: {logout: true}});
+        }
+    };
 
     const handleClose = (event) => {
         setAnchorEl(null);
-        if (event.target.id === 'logout'){
-            history.push({pathname: "/SignIn",state: {logout:true}});
+        if (event.target.id === 'logout') {
+            history.push({pathname: "/SignIn", state: {logout: true}});
+        } else if (event.target.id === 'profile') {
+            history.push({pathname: "/Profile", state: {logout: true}});
         }
-
     };
 
     /*
@@ -62,24 +73,25 @@ export default function MenuAppBar() {
         <div className={classes.root}>
             <AppBar position="static">
                 <Toolbar>
-                    <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-                        <img src={logo} className="App-logo" alt="SouDest Logo" />
+                    <IconButton href="/" edge="start" className={classes.menuButton} color="inherit" aria-label="menu"
+                                onClick={handleAppBarButton}>
+                        <img src={logo} className="App-logo" alt="SouDest Logo"/>
                     </IconButton>
-                    <Typography variant="h6" className="AppBarItems">
+                    <Button href="/"  variant="text" className="AppBarItems" >
                         SouDest
-                    </Typography>
-                    <Typography variant="h6" className="AppBarItems">
+                    </Button>
+                    <Button variant="text"  className="AppBarItems">
                         |
-                    </Typography>
-                    <Typography variant="h6" className="AppBarItems">
+                    </Button>
+                    <Button href="#/plan/"  id="plan" variant="text" className="AppBarItems" >
                         Planen
-                    </Typography>
-                    <Typography variant="h6" className="AppBarItems">
+                    </Button>
+                    <Button href="#/travel/"  id="travel" variant="text" className="AppBarItems">
                         Reisen
-                    </Typography>
-                    <Typography variant="h6" className="AppBarItems">
+                    </Button>
+                    <Button href="#/tickets/"  id="tickets" variant="text" className="AppBarItems">
                         meine Tickets
-                    </Typography>
+                    </Button>
                     {auth && (
                         <div className="ProfileIcon">
                             <IconButton
@@ -89,7 +101,7 @@ export default function MenuAppBar() {
                                 onClick={handleMenu}
                                 color="inherit"
                             >
-                                <AccountCircle />
+                                <AccountCircle/>
                             </IconButton>
                             <Menu
                                 id="menu-appbar"
@@ -106,8 +118,7 @@ export default function MenuAppBar() {
                                 open={open}
                                 onClose={handleClose}
                             >
-                                <MenuItem onClick={handleClose}>Profile</MenuItem>
-                                <MenuItem onClick={handleClose}>My account</MenuItem>
+                                <MenuItem id="profile" onClick={handleClose}>Profile</MenuItem>
                                 <MenuItem id="logout" onClick={handleClose}>Logout</MenuItem>
                             </Menu>
                         </div>

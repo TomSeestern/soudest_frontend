@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0eb541c0-60c8-46e7-aebb-2916ca4cd11a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/AccountDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AccountDetails.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AccountProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AccountProfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProfilePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProfilePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AppBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/AppBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/AppBar.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +91,7 @@
       <workItem from="1581184995439" duration="1892000" />
       <workItem from="1581187992803" duration="1281000" />
       <workItem from="1581258315786" duration="708000" />
-      <workItem from="1581707053100" duration="14542000" />
+      <workItem from="1581707053100" duration="17977000" />
     </task>
     <task id="LOCAL-00001" summary="Add GoogleMap and Cleanup file structure">
       <created>1579699496440</created>
@@ -205,7 +205,21 @@
       <option name="project" value="LOCAL" />
       <updated>1581934070180</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Add very simple Profile Page">
+      <created>1581934340846</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1581934340846</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Move App Bar &quot;over&quot; All Subsites">
+      <created>1581934541156</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1581934541156</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,6 +265,7 @@
     <MESSAGE value="Add Logout Button" />
     <MESSAGE value="Add Logout Success Message after Logout" />
     <MESSAGE value="Add very simple Profile Page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add very simple Profile Page" />
+    <MESSAGE value="Move App Bar &quot;over&quot; All Subsites" />
+    <option name="LAST_COMMIT_MESSAGE" value="Move App Bar &quot;over&quot; All Subsites" />
   </component>
 </project>
