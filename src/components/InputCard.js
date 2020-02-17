@@ -40,6 +40,7 @@ export default function SimpleCard() {
     const DatesSelectorRef = React.createRef();
     const TravelersSelectorRef = React.createRef();
 
+
     function handleSubmit(){
         let transState = TransportSelectorRef.current.state;
         let taxi = transState.taxi;
@@ -50,7 +51,29 @@ export default function SimpleCard() {
         let flight = transState.flight;
         let boat = transState.boat;
 
-        console.log("INFO: "+"Taxi-State: "+transState);
+        let DateSel = DatesSelectorRef.current.state;
+        let src = DateSel.source;
+        let trgt = DateSel.target;
+        let time = DateSel.time;
+        let date = DateSel.date;
+
+        //let TravSel = TravelersSelectorRef.current.state;
+        let travelerId = 1;
+
+        console.log("INFO: "
+            +" Taxi: "+taxi
+            +" bus: "+bus
+            +" train: "+train
+            +" tram: "+tram
+            +" subway: "+subway
+            +" flight: "+flight
+            +" boat: "+boat
+            +" src: "+src
+            +" trgt: "+trgt
+            +" time: "+time
+            +" date: "+date
+            +" travelerId: "+travelerId
+        );
     }
 
     return (
