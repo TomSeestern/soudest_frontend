@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0eb541c0-60c8-46e7-aebb-2916ca4cd11a" name="Default Changelist" comment="Make SignIn and SignUp work with NodeJS Backend">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AppBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppBar.js" afterDir="false" />
+    <list default="true" id="0eb541c0-60c8-46e7-aebb-2916ca4cd11a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/components/AccountDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AccountDetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AccountProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AccountProfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProfilePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProfilePage.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -90,7 +91,7 @@
       <workItem from="1581184995439" duration="1892000" />
       <workItem from="1581187992803" duration="1281000" />
       <workItem from="1581258315786" duration="708000" />
-      <workItem from="1581707053100" duration="4628000" />
+      <workItem from="1581707053100" duration="14542000" />
     </task>
     <task id="LOCAL-00001" summary="Add GoogleMap and Cleanup file structure">
       <created>1579699496440</created>
@@ -183,7 +184,28 @@
       <option name="project" value="LOCAL" />
       <updated>1581714068540</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Add Logout Button">
+      <created>1581870055323</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1581870055323</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Add Logout Success Message after Logout">
+      <created>1581879836428</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1581879836428</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Add very simple Profile Page">
+      <created>1581934070180</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1581934070180</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,6 +248,9 @@
     <MESSAGE value="Add WebStorm data to Gitignore" />
     <MESSAGE value="Add SignIn/Up FrontendDummy and HashRouter" />
     <MESSAGE value="Make SignIn and SignUp work with NodeJS Backend" />
-    <option name="LAST_COMMIT_MESSAGE" value="Make SignIn and SignUp work with NodeJS Backend" />
+    <MESSAGE value="Add Logout Button" />
+    <MESSAGE value="Add Logout Success Message after Logout" />
+    <MESSAGE value="Add very simple Profile Page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add very simple Profile Page" />
   </component>
 </project>
