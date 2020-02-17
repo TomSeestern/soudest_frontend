@@ -8,9 +8,13 @@ import ProfilePage from "./components/ProfilePage";
 import * as serviceWorker from './serviceWorker';
 
 import {HashRouter,Route,Link} from 'react-router-dom'
+import AppBar from "./components/AppBar";
 
 ReactDOM.render(
     <HashRouter>
+        <div>
+            <AppBar/>
+        </div>
         <div>
             <Route exact path="/" component={RootLayout}/>
             <Route exact path="/index" component={RootLayout}/>
