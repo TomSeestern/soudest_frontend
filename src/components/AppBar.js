@@ -56,6 +56,7 @@ export default function MenuAppBar() {
     const handleClose = (event) => {
         setAnchorEl(null);
         if (event.target.id === 'logout') {
+            Cookies.remove('jwt');
             history.push({pathname: "/SignIn", state: {logout: true}});
         } else if (event.target.id === 'profile') {
             history.push({pathname: "/Profile", state: {logout: true}});

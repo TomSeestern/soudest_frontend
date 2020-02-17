@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0eb541c0-60c8-46e7-aebb-2916ca4cd11a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/AppBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/AppBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/AppBar.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +90,7 @@
       <workItem from="1581184995439" duration="1892000" />
       <workItem from="1581187992803" duration="1281000" />
       <workItem from="1581258315786" duration="708000" />
-      <workItem from="1581707053100" duration="24559000" />
+      <workItem from="1581707053100" duration="25030000" />
     </task>
     <task id="LOCAL-00001" summary="Add GoogleMap and Cleanup file structure">
       <created>1579699496440</created>
@@ -228,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581937898627</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Make AppBar Buttons dependent on Login State">
+      <created>1581946490859</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1581946490859</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,6 +280,7 @@
     <MESSAGE value="Add very simple Profile Page" />
     <MESSAGE value="Move App Bar &quot;over&quot; All Subsites" />
     <MESSAGE value="Make AppBar Text to Button and add Links to Sites" />
-    <option name="LAST_COMMIT_MESSAGE" value="Make AppBar Text to Button and add Links to Sites" />
+    <MESSAGE value="Make AppBar Buttons dependent on Login State" />
+    <option name="LAST_COMMIT_MESSAGE" value="Make AppBar Buttons dependent on Login State" />
   </component>
 </project>
