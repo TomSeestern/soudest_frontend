@@ -49,8 +49,9 @@ class RouteStore {
             .then(response => {
                 if (response.status >= 200 && response.status < 300) {
                     response.json().then(json => {
-                        this.RouteFromServer = json.Route;
-                        console.log("INFO: "+" Got a valid Response from Server:\n"+ JSON.stringify(json))
+                        this.RouteFromServer = json.Trip;
+                       //console.log("INFO: "+" Got a valid Response from Server:\n"+ JSON.stringify(json))
+                        console.log("INFO: "+" Got a valid Response from Server:\n"+ JSON.stringify(this.RouteFromServer))
                     });
 
                 } else {

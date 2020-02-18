@@ -22,8 +22,9 @@ import Backdrop from "@material-ui/core/Backdrop/Backdrop";
 import Fade from "@material-ui/core/Fade";
 import Modal from "@material-ui/core/Modal";
 
+import util from 'util';
 
-export default class SimpleCard extends React.Component{
+export default @observer class InputCard extends React.Component{
     constructor(props) {
         super(props);
         this.state = {open : false};
@@ -55,9 +56,21 @@ export default class SimpleCard extends React.Component{
         req.travelerId = 1;
 
         //Now lets ask the Server what he thinks of our Parameters
-        routeStore.fetchRoute(req)
+        routeStore.fetchRoute(req).then(()=> {
+                this.setState({open: true});
+            }
+        );
+
+
     }
     render() {
+        let {RouteFromServer} = routeStore;
+        let routesArray=[];
+        if(typeof RouteFromServer != 'undefined'){
+            routesArray = [...RouteFromServer];
+        }else{
+        }
+        //console.log("INFO: "+" RoutesArray: "+ util.inspect(RouteFromServer, false, null, true /* enable colors */));
         return (
             <Card className="card">
                 <CardContent>
@@ -68,17 +81,17 @@ export default class SimpleCard extends React.Component{
                         aria-labelledby="transition-modal-title"
                         aria-describedby="transition-modal-description"
                         className="modal"
-                        open={this.open}
-                        onClose={()=>{this.open=false}}
+                        open={this.state.open}
+                        onClose={()=>{this.setState({open:false})}}
                         closeAfterTransition
                         BackdropComponent={Backdrop}
                         BackdropProps={{
                             timeout: 500,
                         }}
                     >
-                        <Fade in={this.open}>
+                        <Fade in={this.state.open}>
                             <div className="modalPaper">
-                                <RouteOverviewTable ref={this.RouteOverviewTableRef}/>
+                                <RouteOverviewTable routes={routesArray} ref={this.RouteOverviewTableRef}/>
                             </div>
                         </Fade>
                     </Modal>
