@@ -24,3 +24,5 @@ yarn-error.log*
 
 #WebStorm
 **/.idea/workspace.xml **/.idea/tasks.xml
+/.idea
+/.idea/workspace.xml
