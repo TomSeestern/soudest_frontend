@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0eb541c0-60c8-46e7-aebb-2916ca4cd11a" name="Default Changelist" comment="Add">
-      <change afterPath="$PROJECT_DIR$/src/components/RouteOverviewTable.js" afterDir="false" />
+    <list default="true" id="0eb541c0-60c8-46e7-aebb-2916ca4cd11a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/InputCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/InputCard.js" afterDir="false" />
     </list>
@@ -15,8 +14,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -92,7 +91,7 @@
       <workItem from="1581184995439" duration="1892000" />
       <workItem from="1581187992803" duration="1281000" />
       <workItem from="1581258315786" duration="708000" />
-      <workItem from="1581707053100" duration="40921000" />
+      <workItem from="1581707053100" duration="41450000" />
     </task>
     <task id="LOCAL-00001" summary="Add GoogleMap and Cleanup file structure">
       <created>1579699496440</created>
@@ -269,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581965604800</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Add simple Modal with a Table after the Route Request">
+      <created>1582016281062</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1582016281062</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,6 +329,7 @@
     <MESSAGE value="Eject Make-React-App" />
     <MESSAGE value="Add Data from Date and Transport Selector to parrent Component" />
     <MESSAGE value="Add Request for Route to Server" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Request for Route to Server" />
+    <MESSAGE value="Add simple Modal with a Table after the Route Request" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add simple Modal with a Table after the Route Request" />
   </component>
 </project>
