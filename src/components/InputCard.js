@@ -16,6 +16,12 @@ import TransportSelector from './TransportSelector';
 import DatesSelector from "./DatesSelector";
 import TravelersSelector from "./TravelersSelector";
 
+// for The Modal:
+import RouteOverviewTable from './RouteOverviewTable';
+import Backdrop from "@material-ui/core/Backdrop/Backdrop";
+import Fade from "@material-ui/core/Fade";
+import Modal from "@material-ui/core/Modal";
+
 const useStyles = makeStyles({
     card: {
         minWidth: 275,
@@ -39,7 +45,9 @@ export default function SimpleCard() {
     const TransportSelectorRef = React.createRef();
     const DatesSelectorRef = React.createRef();
     const TravelersSelectorRef = React.createRef();
-
+    const RouteOverviewTableRef = React.createRef();
+    // For the Modal
+    const [open, setOpen] = React.useState(false);
 
     function handleSubmit(){
         let req = {};
@@ -61,21 +69,6 @@ export default function SimpleCard() {
         //let TravSel = TravelersSelectorRef.current.state;
         req.travelerId = 1;
 
-        console.log("INFO: "
-            +" Taxi: "+req.taxi
-            +" bus: "+req.bus
-            +" train: "+req.train
-            +" tram: "+req.tram
-            +" subway: "+req.subway
-            +" flight: "+req.flight
-            +" boat: "+req.boat
-            +" src: "+req.src
-            +" trgt: "+req.trgt
-            +" time: "+req.time
-            +" date: "+req.date
-            +" travelerId: "+req.travelerId
-        );
-
         //Now lets ask the Server what he thinks of our Parameters
         routeStore.fetchRoute(req)
     }
@@ -86,6 +79,24 @@ export default function SimpleCard() {
                 <TransportSelector ref={TransportSelectorRef}/>
                 <DatesSelector ref={DatesSelectorRef}/>
                 <TravelersSelector ref={TravelersSelectorRef}/>
+                <Modal
+                    aria-labelledby="transition-modal-title"
+                    aria-describedby="transition-modal-description"
+                    className={classes.modal}
+                    open={open}
+                    onClose={()=>{setOpen(false)}}
+                    closeAfterTransition
+                    BackdropComponent={Backdrop}
+                    BackdropProps={{
+                        timeout: 500,
+                    }}
+                >
+                    <Fade in={open}>
+                        <div className={classes.modalPaper}>
+                            <RouteOverviewTable ref={RouteOverviewTableRef}/>
+                        </div>
+                    </Fade>
+                </Modal>
             </CardContent>
             <CardActions>
                 <Fab variant="extended" onClick={()=>handleSubmit()} >
