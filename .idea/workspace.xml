@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0eb541c0-60c8-46e7-aebb-2916ca4cd11a" name="Default Changelist" comment="Removed Workspace from the Git Repo">
-      <change afterPath="$PROJECT_DIR$/src/stores/profileStore.js" afterDir="false" />
+    <list default="true" id="0eb541c0-60c8-46e7-aebb-2916ca4cd11a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/AccountDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AccountDetails.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AccountProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AccountProfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProfilePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProfilePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stores/profileStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/profileStore.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +95,7 @@
       <workItem from="1581184995439" duration="1892000" />
       <workItem from="1581187992803" duration="1281000" />
       <workItem from="1581258315786" duration="708000" />
-      <workItem from="1581707053100" duration="72502000" />
+      <workItem from="1581707053100" duration="76088000" />
     </task>
     <task id="LOCAL-00001" summary="Add GoogleMap and Cleanup file structure">
       <created>1579699496440</created>
@@ -302,7 +300,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582035722300</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Dynamicly load Data from Database and Display in Profile Menu">
+      <created>1582056036511</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1582056036511</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -332,7 +337,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add Input Card" />
     <MESSAGE value="Add AppBar" />
     <MESSAGE value="Add Transport Selector" />
     <MESSAGE value="Add Date Selectors" />
@@ -357,6 +361,7 @@
     <MESSAGE value="Convert InputCard from function to Class" />
     <MESSAGE value="Add Route Data Handling from Server over InputCard to the ModalOverview Table" />
     <MESSAGE value="Removed Workspace from the Git Repo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed Workspace from the Git Repo" />
+    <MESSAGE value="Dynamicly load Data from Database and Display in Profile Menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dynamicly load Data from Database and Display in Profile Menu" />
   </component>
 </project>

@@ -26,6 +26,7 @@ export default class AccountDetails extends React.Component{
         super(props);
 
         this.state={
+            id: this.props.user.id,
             firstName: this.props.user.firstName,
             lastName: this.props.user.lastName,
             email: this.props.user.email};
@@ -33,6 +34,8 @@ export default class AccountDetails extends React.Component{
         this.handleChange = event => {
             this.setState({[event.target.id] : event.target.value});
         };
+
+
 
         this.states = [
             {
@@ -52,15 +55,17 @@ export default class AccountDetails extends React.Component{
     saveChanges(event){
 
     }
+    handleSubmit = event => {
+        console.log("Saving Updated Profile");
+        profileStore.modifyProfile(this.state);
+    }
 
     render() {
         return (
             <Card>
                 <form
                     autoComplete="off"
-                    noValidate
-                    action="http://localhost:3000/users/update" method="put"
-                >
+                    noValidate>
                     <CardHeader
                         subheader="The information can be edited"
                         title="Profile"
@@ -190,7 +195,7 @@ export default class AccountDetails extends React.Component{
                         <Button
                             color="primary"
                             variant="contained"
-                            type="submit"
+                            onClick={this.handleSubmit}
                         >
                             Save details
                         </Button>

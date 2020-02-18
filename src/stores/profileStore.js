@@ -41,6 +41,36 @@ class ProfileStore {
                 }
             );
     }
+    @action modifyProfile(modProfile) {
+        console.log("INFO: " + " Sending Put to Backend:\n Json Body: "+util.inspect( modProfile, false, null, true));
+        return fetch('http://localhost:3000/users/update', {
+            method: 'PUT',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': '*',
+            },
+            body: JSON.stringify({
+                myid: modProfile.id,
+                firstName : modProfile.firstName,
+                lastName : modProfile.lastName,
+                email : modProfile.email
+            })
+        }).then(response => {
+            if (response.status >= 200 && response.status < 300) {
+                this.fetchProfile();
+            } else {
+                this.error = "Error on fetching";
+            }
+        })
+            .catch(
+                error => {
+                    this.error = "Error on fetching";
+                    throw error;
+                }
+            );
+    }
+
 }
 
 const store = new ProfileStore();
