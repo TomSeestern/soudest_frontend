@@ -15,7 +15,7 @@ import {
 } from '@material-ui/core';
 import util from "util";
 import profileStore from "../stores/profileStore";
-import {Redirect} from "react-router-dom";
+import { withRouter } from "react-router-dom";
 import Cookies from "js-cookie";
 
 const useStyles = makeStyles(() => ({
@@ -23,7 +23,7 @@ const useStyles = makeStyles(() => ({
 }));
 
 
-export default class AccountDetails extends React.Component {
+class AccountDetails extends React.Component {
     constructor(props) {
         super(props);
 
@@ -64,14 +64,13 @@ export default class AccountDetails extends React.Component {
     handleSubmit = event => {
         console.log("Saving Updated Profile");
         profileStore.modifyProfile(this.state);
-        //this.props.history.push({pathname: "/Profile", state: {logout: true}});
+        this.props.history.go(0);
     };
     handleDelete = event => {
         console.log("Deleting Profile");
         profileStore.deleteProfile(this.state);
         Cookies.remove('jwt');
-        //this.props.history.push({pathname: "/SignIn", state: {logout: true}});
-        //useHistory().push({pathname: "/SignIn", state: {logout: true}});
+        this.props.history.push({pathname: "/SignIn", state: {logout: true}});
     };
 
     render() {
@@ -226,7 +225,7 @@ export default class AccountDetails extends React.Component {
         );
     }
 };
-
+export default withRouter(AccountDetails);
 AccountDetails.propTypes = {
     className: PropTypes.string
 };

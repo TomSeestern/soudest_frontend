@@ -4,7 +4,6 @@
     <list default="true" id="0eb541c0-60c8-46e7-aebb-2916ca4cd11a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/AccountDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AccountDetails.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stores/profileStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/profileStore.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +94,7 @@
       <workItem from="1581184995439" duration="1892000" />
       <workItem from="1581187992803" duration="1281000" />
       <workItem from="1581258315786" duration="708000" />
-      <workItem from="1581707053100" duration="80571000" />
+      <workItem from="1581707053100" duration="80878000" />
     </task>
     <task id="LOCAL-00001" summary="Add GoogleMap and Cleanup file structure">
       <created>1579699496440</created>
@@ -314,7 +313,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582062064111</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Add Deletion of Profile">
+      <created>1582096831263</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1582096831263</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,7 +350,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add Transport Selector" />
     <MESSAGE value="Add Date Selectors" />
     <MESSAGE value="Add Traveler Selector" />
     <MESSAGE value="Add Icons to TravelerSelector Button" />
@@ -369,6 +374,7 @@
     <MESSAGE value="Removed Workspace from the Git Repo" />
     <MESSAGE value="Dynamicly load Data from Database and Display in Profile Menu" />
     <MESSAGE value="Add Put Route for Updating Profile" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Put Route for Updating Profile" />
+    <MESSAGE value="Add Deletion of Profile" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Deletion of Profile" />
   </component>
 </project>
