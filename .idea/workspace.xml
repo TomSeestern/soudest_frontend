@@ -95,7 +95,7 @@
       <workItem from="1581184995439" duration="1892000" />
       <workItem from="1581187992803" duration="1281000" />
       <workItem from="1581258315786" duration="708000" />
-      <workItem from="1581707053100" duration="76088000" />
+      <workItem from="1581707053100" duration="80571000" />
     </task>
     <task id="LOCAL-00001" summary="Add GoogleMap and Cleanup file structure">
       <created>1579699496440</created>
@@ -307,7 +307,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582056036511</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Add Put Route for Updating Profile">
+      <created>1582062064111</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1582062064111</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,7 +344,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add AppBar" />
     <MESSAGE value="Add Transport Selector" />
     <MESSAGE value="Add Date Selectors" />
     <MESSAGE value="Add Traveler Selector" />
@@ -362,6 +368,7 @@
     <MESSAGE value="Add Route Data Handling from Server over InputCard to the ModalOverview Table" />
     <MESSAGE value="Removed Workspace from the Git Repo" />
     <MESSAGE value="Dynamicly load Data from Database and Display in Profile Menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dynamicly load Data from Database and Display in Profile Menu" />
+    <MESSAGE value="Add Put Route for Updating Profile" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Put Route for Updating Profile" />
   </component>
 </project>

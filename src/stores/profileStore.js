@@ -71,6 +71,29 @@ class ProfileStore {
             );
     }
 
+    @action deleteProfile(modProfile) {
+        console.log("INFO: " + " Sending Put to Backend:\n Json Body: "+util.inspect( modProfile, false, null, true));
+        return fetch('http://localhost:3000/users/delete/'+modProfile.id, {
+            method: 'DELETE',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': '*',
+            }
+        }).then(response => {
+            if (response.status >= 200 && response.status < 300) {
+                this.fetchProfile();
+            } else {
+                this.error = "Error on Deleting";
+            }
+        })
+            .catch(
+                error => {
+                    this.error = "Error on Deleting";
+                    throw error;
+                }
+            );
+    }
 }
 
 const store = new ProfileStore();

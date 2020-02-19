@@ -15,26 +15,30 @@ import {
 } from '@material-ui/core';
 import util from "util";
 import profileStore from "../stores/profileStore";
+import {Redirect} from "react-router-dom";
+import Cookies from "js-cookie";
 
 const useStyles = makeStyles(() => ({
     root: {}
 }));
 
 
-export default class AccountDetails extends React.Component{
-    constructor(props){
+export default class AccountDetails extends React.Component {
+    constructor(props) {
         super(props);
 
-        this.state={
+
+        this.state = {
+            redirect: null,
             id: this.props.user.id,
             firstName: this.props.user.firstName,
             lastName: this.props.user.lastName,
-            email: this.props.user.email};
-
-        this.handleChange = event => {
-            this.setState({[event.target.id] : event.target.value});
+            email: this.props.user.email
         };
 
+        this.handleChange = event => {
+            this.setState({[event.target.id]: event.target.value});
+        };
 
 
         this.states = [
@@ -52,13 +56,23 @@ export default class AccountDetails extends React.Component{
             }
         ];
     }
-    saveChanges(event){
+
+    saveChanges(event) {
 
     }
+
     handleSubmit = event => {
         console.log("Saving Updated Profile");
         profileStore.modifyProfile(this.state);
-    }
+        //this.props.history.push({pathname: "/Profile", state: {logout: true}});
+    };
+    handleDelete = event => {
+        console.log("Deleting Profile");
+        profileStore.deleteProfile(this.state);
+        Cookies.remove('jwt');
+        //this.props.history.push({pathname: "/SignIn", state: {logout: true}});
+        //useHistory().push({pathname: "/SignIn", state: {logout: true}});
+    };
 
     render() {
         return (
@@ -198,6 +212,13 @@ export default class AccountDetails extends React.Component{
                             onClick={this.handleSubmit}
                         >
                             Save details
+                        </Button>
+                        <Button
+                            color="default"
+                            variant="contained"
+                            onClick={this.handleDelete}
+                        >
+                            DELETE ACCOUNT
                         </Button>
                     </CardActions>
                 </form>
